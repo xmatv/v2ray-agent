@@ -8780,48 +8780,47 @@ singBoxVersionManageMenu() {
 menu() {
     cd "$HOME" || exit
     echoContent red "\n=============================================================="
-    echoContent green "作者：mack-a"
-    echoContent green "当前版本：v3.2.34"
-    echoContent green "Github：https://github.com/mack-a/v2ray-agent"
-    echoContent green "描述：八合一共存脚本\c"
+    echoContent green "xmatv.com@gmail.com"
+    echoContent green "2024.3"
+    echoContent green "."
+    echoContent green "自用仓库-大团结程序-支持CDN全站加速"
     showInstallStatus
     checkWgetShowProgress
     echoContent red "\n=========================== 推广区============================"
     echoContent red "                                              "
-    echoContent green "VPS选购攻略：https://www.v2ray-agent.com/archives/1679975663984"
-    echoContent green "年付10美金低价VPS AS4837：https://www.v2ray-agent.com/archives/racknerdtao-can-zheng-li-nian-fu-10mei-yuan"
+    echoContent green "TLS证书第一次系统会自动申请生成，有效期90天-过期后需手动重新配置证书"
     echoContent red "=============================================================="
     if [[ -n "${coreInstallType}" ]]; then
         echoContent yellow "1.重新安装"
     else
-        echoContent yellow "1.安装"
+        echoContent yellow "1.安装--需要一定知识-新手不要选择这个"
     fi
 
-    echoContent yellow "2.任意组合安装"
+    echoContent yellow "2.全自动傻瓜安装---使用默认配置"
     if [[ "${coreInstallType}" != "2" ]]; then
-        echoContent yellow "4.Hysteria2管理"
-        echoContent yellow "5.REALITY管理"
-        echoContent yellow "6.Tuic管理"
+        echoContent yellow ""
+        echoContent yellow ""
+        echoContent yellow ""
     else
-        echoContent yellow "5.REALITY管理"
+        echoContent yellow ""
     fi
 
-    echoContent skyBlue "-------------------------工具管理-----------------------------"
-    echoContent yellow "7.用户管理"
-    echoContent yellow "8.伪装站管理"
-    echoContent yellow "9.证书管理"
-    echoContent yellow "10.CDN节点管理"
-    echoContent yellow "11.分流工具"
-    echoContent yellow "12.添加新端口"
-    echoContent yellow "13.BT下载管理"
-    echoContent yellow "15.域名黑名单"
-    echoContent skyBlue "-------------------------版本管理-----------------------------"
-    echoContent yellow "16.core管理"
-    echoContent yellow "17.更新脚本"
-    echoContent yellow "18.安装BBR、DD脚本"
-    echoContent skyBlue "-------------------------脚本管理-----------------------------"
-    echoContent yellow "20.卸载脚本"
-    echoContent red "=============================================================="
+    echoContent skyBlue "-"
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent skyBlue "-"
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent yellow ""
+    echoContent skyBlue "-"
+    echoContent yellow ""
+    echoContent red "="
     mkdirTools
     aliasInstall
     read -r -p "请选择:" selectInstallType
